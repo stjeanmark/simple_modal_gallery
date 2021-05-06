@@ -153,6 +153,37 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 		],
 		'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true]
 	),
+	'hotspot_links' => array
+		(
+			'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_links'],
+			'inputType'				=> 'multiColumnWizard',
+			'eval' => array
+			(
+				'tl_class'			=> 'clr',
+				'columnFields'		=> array
+				(
+					'hotspot_x' => array
+					(
+						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_x'],
+						'inputType'				=> 'text',
+						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'w50'),
+					),
+					'hotspot_y' => array
+					(
+						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_y'],
+						'inputType'				=> 'text',
+						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'w50'),
+					),
+					'hotspot_text' => array
+					(
+						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_text'],
+						'inputType'				=> 'text',
+						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'w50'),
+					),
+				),
+			),
+			'sql'					=> "blob NULL",
+		),
 	'published' => array
 	(
 		'exclude'                 => true,
@@ -163,4 +194,3 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 	)		
     )
 );
-
