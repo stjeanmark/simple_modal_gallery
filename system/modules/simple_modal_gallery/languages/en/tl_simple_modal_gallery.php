@@ -24,7 +24,8 @@ $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['alias'] 			           = array('A
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['product_name'] 			   	= array('Product Name', 'The name of the product');
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['product_inventory'] 		= array('Product Inventory', 'The inventory total');
 
-$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['modal_gallery_image'] 		= array('Select the Image', 'Select the image we will use for this particular slide');
+$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_image'] 		= array('Select the Slide\'s Image', 'Select the image we will use for this particular slide');
+$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_name'] 		= array('Slide Name', 'Give this slide a name');
 
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['published'] 		        = array('Published', 'Save this product\'s record.');
  
