@@ -42,7 +42,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
         ),
         'label' => array
         (
-            'fields'                  => array('modal_gallery_image'),
+            'fields'                  => array('slide_name'),
             'format'                  => '%s'
         ),
         'global_operations' => array
@@ -96,7 +96,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
     // Palettes
     'palettes' => array
     (
-        'default'                     => '{image_legend},modal_gallery_image;{publish_legend},published;'
+        'default'                     => '{slide_legend}slide_name,slide_image;{publish_legend},published;'
     ),
  
     // Fields
@@ -128,9 +128,18 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 		'sql'                     => "varchar(128) COLLATE utf8_bin NOT NULL default ''"
 
 	),
-	'modal_gallery_image' => array
+	'slide_name' => array
 	(
-		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['modal_gallery_image'],
+		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_name'],
+		'inputType'               => 'text',
+		'default'		  => '',
+		'search'                  => true,
+		'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50'),
+		'sql'                     => "varchar(255) NOT NULL default ''"
+	),
+	'slide_image' => array
+	(
+		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_image'],
 		'inputType'               => 'fileTree',
 		'default'		  => '',
 		'search'                  => true,
