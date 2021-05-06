@@ -96,7 +96,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
     // Palettes
     'palettes' => array
     (
-        'default'                     => '{slide_legend},slide_name,slide_image;{publish_legend},published;'
+        'default'                     => '{slide_legend},slide_name,slide_image;{hotspot_legend},hotspot_links;{publish_legend},published;'
     ),
  
     // Fields
