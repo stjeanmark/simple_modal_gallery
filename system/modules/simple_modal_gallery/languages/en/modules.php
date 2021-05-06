@@ -13,4 +13,4 @@
 /**
  * Back end modules
  */
-$GLOBALS['TL_LANG']['MOD']['simple_modal_gallery'] = array('Modal Gallery', 'Add images for a modal gallery);
+$GLOBALS['TL_LANG']['MOD']['simple_modal_gallery'] = array('Modal Gallery', 'Add images for a modal gallery');
