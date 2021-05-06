@@ -14,7 +14,7 @@
 /**
  * Legends
  */
-$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['product_legend'] 	= 'Product Details';
+$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['image_legend'] 	= 'Image Details';
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['publish_legend'] 	= 'Publish';
 
 /**
