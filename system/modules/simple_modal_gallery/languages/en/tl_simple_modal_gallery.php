@@ -27,6 +27,10 @@ $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['product_inventory'] 		= array('P
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_image'] 		= array('Select the Slide\'s Image', 'Select the image we will use for this particular slide');
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_name'] 		= array('Slide Name', 'Give this slide a name');
 
+$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_x'] 		= array('Hotspot X', 'X coordinate for the hotspot link on the image');
+$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_y'] 		= array('Hotspot Y', 'Y coordinate for the hotspot link on the image');
+$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_text'] 		= array('Hotspot Text', 'The text that will show in the modal box');
+
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['published'] 		        = array('Published', 'Save this product\'s record.');
  
  /**
