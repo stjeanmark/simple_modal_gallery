@@ -42,8 +42,8 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
         ),
         'label' => array
         (
-            'fields'                  => array('product_name', 'product_inventory'),
-            'format'                  => '%s <span style="font-weight: bold;">(%s)</span>'
+            'fields'                  => array('modal_gallery_image'),
+            'format'                  => '%s'
         ),
         'global_operations' => array
         (
@@ -96,7 +96,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
     // Palettes
     'palettes' => array
     (
-        'default'                     => '{product_legend},product_name,product_inventory;{publish_legend},published;'
+        'default'                     => '{image_legend},modal_gallery_image;{publish_legend},published;'
     ),
  
     // Fields
@@ -128,23 +128,21 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 		'sql'                     => "varchar(128) COLLATE utf8_bin NOT NULL default ''"
 
 	),
-	'product_name' => array
+	'modal_gallery_image' => array
 	(
-		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['product_name'],
-		'inputType'               => 'text',
+		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['modal_gallery_image'],
+		'inputType'               => 'fileTree',
 		'default'		  => '',
 		'search'                  => true,
-		'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50'),
-		'sql'                     => "varchar(255) NOT NULL default ''"
-	),
-	'product_inventory' => array
-	(
-		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['product_inventory'],
-		'inputType'               => 'text',
-		'default'		  => '',
-		'search'                  => true,
-		'eval'                    => array('mandatory'=>false, 'tl_class'=>'w50'),
-		'sql'                     => "int(10) unsigned NOT NULL default '0'"
+		'eval' => [
+			'tl_class' => 'clr',
+			'mandatory' => true, 
+			'fieldType' => 'radio', 
+			'filesOnly' => true, 
+			'extensions' => \Contao\Config::get('validImageTypes'), 
+			'mandatory' => true,
+		],
+		'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true]
 	),
 	'published' => array
 	(
