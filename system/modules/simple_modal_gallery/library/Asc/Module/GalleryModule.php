@@ -66,6 +66,7 @@ class GalleryModule extends \Contao\Module
      */
     protected function compile()
     {
+	    /*
 		$objLocation = Location::findBy('published', '1');
 		
 		if (!in_array('system/modules/locations/assets/js/locations.js', $GLOBALS['TL_JAVASCRIPT'])) { 
@@ -145,7 +146,7 @@ class GalleryModule extends \Contao\Module
 		
 		$this->Template->stateOptions = $this->generateSelectOptions();
 		$this->Template->states = $arrStates;
-		
+		*/
 	}
 
 	public function generateSelectOptions($blank = TRUE) {
