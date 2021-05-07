@@ -1,4 +1,4 @@
-<!–– This is for each listing, list off each one ––>
+<!–– This is for each listing, list off each one
 <div class="location_full">
 	<div class='name'><?php echo $this->name; ?></div>
 	<div class='address'>
@@ -27,4 +27,6 @@
 	<?php if ($this->url): ?>
 	<div class='link'><a href="<?php echo $this->url; ?>"><?php echo $this->url; ?></a></div>
 	<?php endif; ?>
-</div>
+</div> ––>
+
+<h2>This is an individual slide<h2>
