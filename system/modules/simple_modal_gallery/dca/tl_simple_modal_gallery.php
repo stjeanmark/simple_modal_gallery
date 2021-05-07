@@ -10,13 +10,9 @@
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
- 
-/**
- * Table tl_simple_modal_gallery
- */
+/* Table tl_simple_modal_gallery */
 $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 (
- 
     // Config
     'config' => array
     (
@@ -63,7 +59,6 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
                 'href'                => 'act=edit',
                 'icon'                => 'edit.gif'
             ),
-			
             'copy' => array
             (
                 'label'               => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['copy'],
@@ -78,12 +73,12 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
                 'attributes'          => 'onclick="if(!confirm(\'' . $GLOBALS['TL_LANG']['MSC']['deleteConfirm'] . '\'))return false;Backend.getScrollOffset()"'
             ),
             'toggle' => array
-			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['toggle'],
-				'icon'                => 'visible.gif',
-				'attributes'          => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
-				'button_callback'     => array('Asc\Backend\SimpleModalGalleryBackend', 'toggleIcon')
-			),
+	    (
+		'label'               => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['toggle'],
+		'icon'                => 'visible.gif',
+		'attributes'          => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
+		'button_callback'     => array('Asc\Backend\SimpleModalGalleryBackend', 'toggleIcon')
+	    ),
             'show' => array
             (
                 'label'               => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['show'],
@@ -160,25 +155,31 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 			'eval' => array
 			(
 				'tl_class'			=> 'clr',
-				'columnFields'		=> array
+				'columnFields'			=> array
 				(
 					'hotspot_x' => array
 					(
 						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_x'],
 						'inputType'				=> 'text',
-						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'w50'),
+						'eval'                   		=> array('mandatory'=>true),
 					),
 					'hotspot_y' => array
 					(
 						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_y'],
 						'inputType'				=> 'text',
-						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'w50'),
+						'eval'                   		=> array('mandatory'=>true),
+					),
+					'hotspot_title' => array
+					(
+						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_title'],
+						'inputType'				=> 'text',
+						'eval'                   		=> array('mandatory'=>true),
 					),
 					'hotspot_text' => array
 					(
 						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_text'],
-						'inputType'				=> 'text',
-						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'w50'),
+						'inputType'				=> 'textarea',
+						'eval'                   		=> array('mandatory'=>true, 'rte'=>'tinyMCE'),
 					),
 				),
 			),
