@@ -23,6 +23,16 @@
 					    echo $value . "<br>";
 					}
 					
+					foreach($result->hotspot_linksas $value) {
+						foreach($value as $key => $val) {
+							if($key == "hotspot_x") {
+								echo "Hotspot_X: " + $key + ."<br>";
+							}
+							/* etc */
+						}
+					}
+					
+					
 				?></div>
 			</div>
 			
