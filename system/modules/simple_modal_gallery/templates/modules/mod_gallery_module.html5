@@ -15,18 +15,13 @@
 				<p class="id_<?php echo $result->id; ?>"><?php echo $result->slide_name; ?></p>
 				<img src="<?= $strPath; ?>">
 				<div><?php 
-					
-
-	
 				
-				foreach($result->hotspot_links as $links) {
-					echo "ding";
-				}
-	
-	
-	
-	
+					echo "part1: " + $result->hotspot_links;
 					
+					$linkies = $result->hotspot_links;
+					
+					echo "part2: " + $linkies['hotspot_x'];
+
 				?></div>
 			</div>
 			
