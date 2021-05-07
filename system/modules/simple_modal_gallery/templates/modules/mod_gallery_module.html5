@@ -15,23 +15,17 @@
 				<p class="id_<?php echo $result->id; ?>"><?php echo $result->slide_name; ?></p>
 				<img src="<?= $strPath; ?>">
 				<div><?php 
-					echo "Part1";
-					echo print_r($result->hotspot_links); 
 					
-					// Loop through colors array
-					foreach($result->hotspot_links as $value){
-					    echo $value . "<br>";
-					}
-					
-					foreach($result->hotspot_linksas $value) {
-						foreach($value as $key => $val) {
-							if($key == "hotspot_x") {
-								echo "Hotspot_X: " + $key + ."<br>";
-							}
-							/* etc */
-						}
-					}
-					
+
+	
+				
+				foreach($result->hotspot_links as $links) {
+					echo "ding";
+				}
+	
+	
+	
+	
 					
 				?></div>
 			</div>
