@@ -14,15 +14,7 @@
 			<div style="margin-bottom: 40px; background-color: gray;">
 				<p class="id_<?php echo $result->id; ?>"><?php echo $result->slide_name; ?></p>
 				<img src="<?= $strPath; ?>">
-				<div><?php 
-				
-					echo "part1: " + implode($result->hotspot_links);
-					
-					$linkies = $result->hotspot_links;
-					
-					echo "part2: " + $linkies['hotspot_x'];
-
-				?></div>
+				<div><?php echo var_dump($result->hotspot_links);</div>
 			</div>
 			
 			<?php
