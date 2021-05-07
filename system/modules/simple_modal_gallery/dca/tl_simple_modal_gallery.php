@@ -179,7 +179,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 					(
 						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_text'],
 						'inputType'				=> 'textarea',
-						'eval'                   		=> array('mandatory'=>true),
+						'eval'                   		=> array('mandatory'=>true, 'rte'=>'tinyMCE'),
 					),
 				),
 			),
