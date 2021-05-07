@@ -1,4 +1,4 @@
-<!–– Wrapper for the whole module on the page ––>
+<!–– Wrapper for the whole module on the page
 <div class="mod_locations_list">
 	<!–– Select for picking which category ––>
 	<select name="locations_category_selector" class="locations_category_selector">
@@ -39,4 +39,6 @@
 		</p>
 	</div>
 		
-</div>
+</div> ––>
+
+<h1>This is the gallery module</h2>
