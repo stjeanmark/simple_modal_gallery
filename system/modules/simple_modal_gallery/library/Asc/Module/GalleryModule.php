@@ -1,29 +1,28 @@
 <?php
 
 /**
- * Locations - Location Plugin for Contao
+ * Simple Modal Gallery - A simple gallery where each image can have multiple hotspots which trigger a modal box.
  *
- * Copyright (C) 2018 Andrew Stevens
+ * Copyright (C) 2021 Mark St. Jean.
  *
- * @package    asconsulting/locations
- * @link       http://andrewstevens.consulting
+ * @package    stjeanmark/simple_modal_gallery
+ * @link       http://www.markstjean.com
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
   
 namespace Asc\Module;
  
-use Asc\Model\Location;
-use Asc\Locations; 
+use Asc\Model\SimpleModalGallery;
  
-class LocationsList extends \Contao\Module
+class GalleryModule extends \Contao\Module
 {
  
     /**
      * Template
      * @var string
      */
-    protected $strTemplate = 'mod_locations_list';
+    protected $strTemplate = 'mod_gallery_module';
  
 	protected $arrStates = array();
  
