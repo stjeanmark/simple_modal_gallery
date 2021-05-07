@@ -14,7 +14,17 @@
 			<div style="margin-bottom: 40px; background-color: gray;">
 				<p class="id_<?php echo $result->id; ?>"><?php echo $result->slide_name; ?></p>
 				<img src="<?= $strPath; ?>">
-				<div><?php echo print_r($result->hotspot_links); ?></div>
+				<div><?php 
+					echo print_r($result->hotspot_links); 
+					
+					foreach($result->hotspot_links as $link) {
+						echo "Hotspot X: " + $link['hotspot_x'] + " | ";
+						echo "Hotspot Y: " + $link['hotspot_y'] + " | ";
+						echo "Hotspot Title: " + $link['hotspot_title'] + " | ";
+						echo "Hotspot Text: " + $link['hotspot_text'];
+					}
+					
+				?></div>
 			</div>
 			
 			<?php
