@@ -35,7 +35,7 @@ class GalleryModule extends \Contao\Module
 	public function __construct($objModule, $strColumn='main')
 	{
 		parent::__construct($objModule, $strColumn);
-		$this->arrStates = Locations::getStates();
+		//$this->arrStates = Locations::getStates();
 	}
 	
     /**
