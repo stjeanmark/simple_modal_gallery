@@ -5,12 +5,14 @@
 		<option value="">Choose A Category...</option>
 		<!–– pull categories from database ––>
 		<?php
+			/*
 			$this->import('Database');
 			$result = $this->Database->prepare("SELECT * FROM tl_category WHERE published=1")->execute();
 			while($result->next())
 			{
 				?> <option value="<?php echo $result->id; ?>"><?php echo $result->name; ?></option> <?php
 			}
+			*/
 		?>
 		
 	</select>
