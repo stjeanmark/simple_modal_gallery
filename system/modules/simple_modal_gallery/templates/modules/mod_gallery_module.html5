@@ -18,20 +18,10 @@
 					echo "Part1";
 					echo print_r($result->hotspot_links); 
 					
-					
-					
-					echo "Part2";
-					$last = count($result->hotspot_links) - 1;
-					foreach ($result->hotspot_links as $i => $row)
-					{
-					    $isFirst = ($i == 0);
-					    $isLast = ($i == $last);
-
-					    echo "Hotspot X: " + $row['hotspot_x'];
+					// Loop through colors array
+					foreach($result->hotspot_links as $value){
+					    echo $value . "<br>";
 					}
-					
-					echo "Part3";
-					var_dump($result->hotspot_links);
 					
 				?></div>
 			</div>
