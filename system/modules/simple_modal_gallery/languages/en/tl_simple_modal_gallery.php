@@ -11,16 +11,12 @@
  */
 
 
-/**
- * Legends
- */
+/* Legends */
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_legend']     	= 'Image Details';
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_legend']   	= 'Hotspot Details';
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['publish_legend']   	= 'Publish';
 
-/**
- * Fields
- */
+/* Fields */
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['alias'] 			           = array('Alias', 'Auto-generated alias.');
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['product_name'] 			   	= array('Product Name', 'The name of the product');
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['product_inventory'] 		= array('Product Inventory', 'The inventory total');
@@ -35,9 +31,7 @@ $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_text']      		= array('H
 
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['published'] 		        = array('Published', 'Save this product\'s record.');
  
- /**
- * Buttons
- */
+ /* Buttons */
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['new']   		 	= array('New Slide', 'Add a new slide');
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['show']  		 	= array('Slide Details', 'Show the details of slide ID %s');
 $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['edit']  		 	= array('Edit Slide', 'Edit slide ID %s');
