@@ -16,7 +16,7 @@
 				<img src="<?= $strPath; ?>">
 				<div><?php 
 				
-					echo "part1: " + $result->hotspot_links;
+					echo "part1: " + implode($result->hotspot_links);
 					
 					$linkies = $result->hotspot_links;
 					
