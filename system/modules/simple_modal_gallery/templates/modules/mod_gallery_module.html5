@@ -24,6 +24,17 @@
 						echo "Hotspot Text: " + $link['hotspot_text'];
 					}
 					
+					$last = count($result->hotspot_links) - 1;
+					foreach ($result->hotspot_links as $i => $row)
+					{
+					    $isFirst = ($i == 0);
+					    $isLast = ($i == $last);
+
+					    echo "Hotspot X: " + $row['hotspot_x'];
+					}
+					
+					
+					
 				?></div>
 			</div>
 			
