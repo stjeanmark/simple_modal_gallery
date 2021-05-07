@@ -7,7 +7,16 @@
 		$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
 		while($result->next())
 		{
-			?> <p class="id_<?php echo $result->id; ?>"><?php echo $result->slide_name; ?></p> <?php
+			$objFile = \FilesModel::findByUuid($uuid);
+			$strPath = $objFile->path;
+			?>
+			
+			<div>
+				<p class="id_<?php echo $result->id; ?>"><?php echo $result->slide_name; ?></p>
+				<img src="<?= $strPath; ?>">
+			</div>
+			
+			<?php
 		}
 	?>
 	
