@@ -10,7 +10,5 @@
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
-/**
- * Back end modules
- */
-$GLOBALS['TL_LANG']['MOD']['simple_modal_gallery'] = array('Modal Gallery', 'Add images for a modal gallery');
+/* Back end modules */
+$GLOBALS['TL_LANG']['MOD']['simple_modal_gallery'] = array('Modal Gallery', 'Add slides for a modal gallery');
