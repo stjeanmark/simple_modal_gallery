@@ -160,25 +160,25 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 					(
 						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_x'],
 						'inputType'				=> 'text',
-						'eval'                   		=> array('mandatory'=>true,'tl_class'=>'w50'),
+						'eval'                   		=> array('mandatory'=>true,'tl_class'=>'w50','columnPos'=>'group1'),
 					),
 					'hotspot_y' => array
 					(
 						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_y'],
 						'inputType'				=> 'text',
-						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'w50'),
+						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'w50','columnPos'=>'group1'),
 					),
 					'hotspot_title' => array
 					(
 						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_title'],
 						'inputType'				=> 'text',
-						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'long'),
+						'eval'                   		=> array('mandatory'=>true, 'tl_class'=>'long','columnPos'=>'group2'),
 					),
 					'hotspot_text' => array
 					(
 						'label'					=> $GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_text'],
 						'inputType'				=> 'textarea',
-						'eval'                   		=> array('mandatory'=>true, 'rte'=>'tinyMCE', 'tl_class'=>'long'),
+						'eval'                	=> array('mandatory'=>true, 'rte'=>'tinyMCE','tl_class'=>'long','columnPos'=>'group3'),
 					),
 				),
 			),
