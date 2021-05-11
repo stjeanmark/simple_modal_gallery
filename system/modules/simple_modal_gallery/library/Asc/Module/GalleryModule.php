@@ -66,12 +66,11 @@ class GalleryModule extends \Contao\Module
      */
     protected function compile()
     {
-	    // add our js script
-	    if (!in_array('system/modules/locations/assets/js/simple_modal_gallery.js', $GLOBALS['TL_BODY'])) { 
-			$GLOBALS['TL_BODY'][] = 'system/modules/locations/assets/js/simple_modal_gallery.js';
-		}
+	     // add our js script
+	     $GLOBALS['TL_BODY'][] = '<script src="system/modules/simple_modal_gallery/assets/css/simple_modal_gallery.js"></script>';
+
 	    // add our css
-	     if (!in_array('system/modules/locations/assets/css/simple_modal_gallery.css', $GLOBALS['TL_CSS'])) { 
+	     if (!in_array('system/modules/simple_modal_gallery/assets/css/simple_modal_gallery.css', $GLOBALS['TL_CSS'])) { 
 			$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/locations/assets/css/simple_modal_gallery.css';
 		}
 	    
