@@ -1,6 +1,6 @@
 <!–– pull categories from database ––>
 <div class="slide_container">
-	<div class="slide_row">
+	<div class="row">
 		<?php
 			$this->import('Database');
 			$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
@@ -10,7 +10,7 @@
 				$strPath = $objFile->path;
 				?>
 				
-				<div class="thumb_slide_wrapper">
+				<div class="column">
 					<img class="demo cursor" src="<?= $strPath; ?>" style="width:100%" onclick="currentSlide(1)" alt="<?php echo $result->slide_name; ?>">
 				</div>
 
@@ -20,7 +20,7 @@
 		?>
 	</div>
 
-	<div class="main_container">
+	<div class="container">
 		<?php
 			$this->import('Database');
 			$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
@@ -30,7 +30,7 @@
 				$strPath = $objFile->path;
 				?>
 				
-				<div class="fullsize_slide_wrapper">
+				<div class="mySlides">
 					<div class="numbertext">1 / 6</div>
 					<img src="<?= $strPath; ?>" style="width:100%">
 				</div>
