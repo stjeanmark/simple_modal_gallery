@@ -1,30 +1,50 @@
-<div class="mod_modal_gallery">
-	<h2>This is coming from the mod_gallery_module.html5 template</h2>
-	
-	<!–– pull categories from database ––>
-	<?php
-		$this->import('Database');
-		$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
-		while($result->next())
-		{
-			$objFile = \FilesModel::findByUuid($result->slide_image);
-			$strPath = $objFile->path;
-			?>
-			
-			<div style="margin-bottom: 40px; background-color: gray;">
-				<p class="id_<?php echo $result->id; ?>"><?php echo $result->slide_name; ?></p>
-				<img src="<?= $strPath; ?>">
-				
-				<?php
-					echo unserialize($result->hotspot_links);
-					echo print_r(unserialize($result->hotspot_links));
+<!–– pull categories from database ––>
+<div class="slide_container">
+	<div class="row">
+		<?php
+			$this->import('Database');
+			$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
+			while($result->next())
+			{
+				$objFile = \FilesModel::findByUuid($result->slide_image);
+				$strPath = $objFile->path;
 				?>
 				
+				<div class="column">
+					<img class="demo cursor" src="<?= $strPath; ?>" style="width:100%" onclick="currentSlide(1)" alt="<?php echo $result->slide_name; ?>">
+				</div>
+
+
+				<?php
+			}
+		?>
+	</div>
+
+	<div class="container">
+		<?php
+			$this->import('Database');
+			$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
+			while($result->next())
+			{
+				$objFile = \FilesModel::findByUuid($result->slide_image);
+				$strPath = $objFile->path;
+				?>
 				
-			</div>
-			
-			<?php
-		}
-	?>
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div>
+					<img src="<?= $strPath; ?>" style="width:100%">
+				</div>
+
+				<?php
+			}
+		?>
 	
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+	</div>
 </div>
