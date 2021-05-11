@@ -12,7 +12,7 @@ img {
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+.main_container {
   position: relative;
 }
 
@@ -22,10 +22,10 @@ img {
 	width: 1200px;
 	margin: auto;
 }
-.row { width: 200px; }
+.slide_row { width: 200px; }
 
 /* Hide the images by default */
-.mySlides {
+.fullsize_slide_wrapper {
   display: none;
 }
 
@@ -80,14 +80,14 @@ img {
   color: white;
 }
 
-.row:after {
+.slide_row:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* Six columns side by side */
-.column {
+.thumb_slide_wrapper {
   //float: left;
   //width: 16.66%;
 }
