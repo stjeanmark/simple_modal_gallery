@@ -71,7 +71,7 @@ class GalleryModule extends \Contao\Module
 
 	    // add our css
 	     if (!in_array('system/modules/simple_modal_gallery/assets/css/simple_modal_gallery.css', $GLOBALS['TL_CSS'])) { 
-			$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/locations/assets/css/simple_modal_gallery.css';
+			$GLOBALS['TL_CSS'][] = 'system/modules/simple_modal_gallery/assets/css/simple_modal_gallery.css';
 		}
 	    
 	    /*
