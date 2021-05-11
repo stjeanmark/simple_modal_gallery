@@ -67,7 +67,7 @@ class GalleryModule extends \Contao\Module
     protected function compile()
     {
 	     // add our js script
-	     $GLOBALS['TL_BODY'][] = '<script src="system/modules/simple_modal_gallery/assets/css/simple_modal_gallery.js"></script>';
+	     $GLOBALS['TL_BODY'][] = '<script src="system/modules/simple_modal_gallery/assets/js/simple_modal_gallery.js"></script>';
 
 	    // add our css
 	     if (!in_array('system/modules/simple_modal_gallery/assets/css/simple_modal_gallery.css', $GLOBALS['TL_CSS'])) { 
