@@ -16,14 +16,8 @@
 				<img src="<?= $strPath; ?>">
 				
 				<?php
-					$hotspotLinks = unserialize($result->hotspot_links);
-					foreach ($contractors as $contractor)
-						
-					echo '<div class="hotspot_links>';
-					foreach ($hotspotLinks as $link) {
-						echo htmlspecialchars($link).'<br/>';
-					}
-					echo '</div>';
+					echo unserialize($result->hotspot_links);
+					echo print_r(unserialize($result->hotspot_links));
 				?>
 				
 				
