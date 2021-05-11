@@ -4,7 +4,7 @@
 		<?php
 			$this->import('Database');
 			$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
-			$counter = 1;
+			$slideCounter = 1;
 			while($result->next())
 			{
 				$objFile = \FilesModel::findByUuid($result->slide_image);
@@ -12,12 +12,12 @@
 				?>
 				
 				<div class="column">
-					<img class="demo cursor" src="<?= $strPath; ?>" style="width:100%" onclick="currentSlide(<?= $counter ?>)" alt="<?php echo $result->slide_name; ?>">
+					<img class="demo cursor" src="<?= $strPath; ?>" style="width:100%" onclick="currentSlide(<?= $slideCounter ?>)" alt="<?php echo $result->slide_name; ?>">
 				</div>
 
 
 				<?php
-				$counter++;
+				$slideCounter++;
 			}
 		?>
 	</div>
@@ -26,7 +26,7 @@
 		<?php
 			$this->import('Database');
 			$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
-			#counter = 1;
+			#thumbCounter = 1;
 			while($result->next())
 			{
 				$objFile = \FilesModel::findByUuid($result->slide_image);
@@ -34,12 +34,12 @@
 				?>
 				
 				<div class="mySlides">
-					<div class="numbertext"><?= $counter ?> / 6</div>
+					<div class="numbertext"><?= $thumbCounter ?> / 6</div>
 					<img src="<?= $strPath; ?>" style="width:100%">
 				</div>
 
 				<?php
-				$counter++;
+				$thumbCounter++;
 			}
 		?>
 	
