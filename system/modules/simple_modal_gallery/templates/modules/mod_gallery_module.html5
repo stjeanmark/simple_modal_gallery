@@ -50,14 +50,9 @@
 							<?php
 							foreach($links as $link)
 							{
-								var myImg = document.querySelector("#id_" + $thumbCounter);
-								var realWidth = myImg.naturalWidth;
-								var realHeight = myImg.naturalHeight;
-								
-								var percentWidth = ($link['hotspot_x'] / realWidth) * 100;
-								var percentHeight = ($link['hotspot_y'] / realHeight) * 100;
-								
-								console.log("Width: " + percentWidth + ", Height: " + percentHeight);
+								list($width, $height) = getimagesize(<?= $strPath; ?>);
+								echo "width: " . $width . "<br />";
+								echo "height: " .  $height;
 							?>
 								
 								<a class="modal_trigger" href="javascript:;" onclick="triggerModal('<?= $triggerCounter; ?>')"><i class="far fa-dot-circle"></i></a>
