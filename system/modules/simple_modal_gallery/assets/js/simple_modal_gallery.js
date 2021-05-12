@@ -29,12 +29,13 @@ function showSlides(n) {
 
 function triggerModal(id) {
   
+  console.log("id: " + id);
   var hoverInv = document.getElementsByClassName("modal_wrapper");
   for (var i=0; i<hoverInv.length; i++){
        hoverInv[i].style.display = "none";
   }
   
   var modal = document.getElementById("id_"+id);
-  modal.style.display = "block";
+    modal.style.display = "block";
   return;
 }
