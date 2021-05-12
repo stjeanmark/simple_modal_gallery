@@ -50,7 +50,7 @@
 							<?php
 							foreach($links as $link)
 							{
-								list($width, $height) = getimagesize(<?= $strPath; ?>);
+								list($width, $height) = getimagesize($strPath);
 								echo "width: " . $width . "<br />";
 								echo "height: " .  $height;
 							?>
