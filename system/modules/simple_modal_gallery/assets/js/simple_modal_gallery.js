@@ -35,7 +35,7 @@ function triggerModal(id) {
        hoverInv[i].style.display = "none";
   }
   
-  var modal = document.getElementById("id_"+id);
+  var modal = document.getElementById("modal_"+id);
     modal.style.display = "block";
   return;
 }
