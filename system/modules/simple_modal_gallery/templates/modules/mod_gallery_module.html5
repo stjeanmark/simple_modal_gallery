@@ -44,20 +44,19 @@
 					<?php
 						$links = unserialize($result->hotspot_links);
 
-						foreach($links as $link) {
-							<div class="modal_wrapper">
-								<div class="modal_title">
-									echo $link['hotspot_title'];
+						<div class="modals_container">
+							foreach($links as $link)
+							{
+								<div class="modal_wrapper">
+									<div class="modal_title">
+										echo $link['hotspot_title'];
+									</div>
+									<div class="modal_text">
+										echo $link['hotspot_text'];
+									</div>
 								</div>
-								<div class="modal_text">
-									echo $link['hotspot_text'];
-								</div>
-								<div class="modal_coordinates">
-									echo "Hotspot_X: " . $link['hotspot_x'] . "<br>";
-									echo "Hotspot_Y: " . $link['hotspot_y'];
-								</div>
-							</div>
-						}
+							}
+						</div>
 
 
 					?>
