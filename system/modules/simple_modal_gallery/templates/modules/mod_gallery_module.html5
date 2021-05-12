@@ -51,10 +51,10 @@
 							foreach($links as $link)
 							{
 							?>
-								<a class="modal_trigger" href="id_<?php echo $triggerCounter; ?>">
-									<?php echo link['hotspot_title']; ?>
+								<a class="modal_trigger" href="id_<?php echo $triggerCounter; ?>" id="id_<?php echo $triggerCounter; ?>">
+									<?php echo $link['hotspot_title']; ?>
 								</a>
-								<div class="modal_wrapper">
+								<div class="modal_wrapper" id="id_<?php echo $triggerCounter; ?>">
 									<div class="modal_title">
 										<?php echo $link['hotspot_title']; ?>
 									</div>
