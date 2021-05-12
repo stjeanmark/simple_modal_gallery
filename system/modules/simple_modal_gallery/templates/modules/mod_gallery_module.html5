@@ -1,5 +1,7 @@
 <!–– pull categories from database ––>
 <div class="slide_container">
+	
+	<!-- This is the thumbnails -->
 	<div class="row">
 		<?php
 			$this->import('Database');
@@ -15,25 +17,13 @@
 					<img class="demo cursor" src="<?= $strPath; ?>" style="width:100%" onclick="currentSlide(<?= $slideCounter ?>)" alt="<?php echo $result->slide_name; ?>">
 				</div>
 				
-				<div class="modals">
-				<?php
-					$links = unserialize($result->hotspot_links);
-					
-					foreach($links as $link) {
-						echo "Title: " . $link['hotspot_title'] . "<br>";
-						echo "Text: " . $link['hotspot_text'] . "<br><br>";
-					}
-					
-					
-				?>
-				</div>
-
 				<?php
 				$slideCounter++;
 			}
 		?>
 	</div>
 
+	<!-- This is the main image, which will contain the modal links -->
 	<div class="container">
 		<?php
 			$this->import('Database');
@@ -48,6 +38,33 @@
 				<div class="mySlides">
 					<div class="numbertext"><?= $thumbCounter ?> / 6</div>
 					<img src="<?= $strPath; ?>" style="width:100%">
+					
+					
+					<div class="modals">
+					<?php
+						$links = unserialize($result->hotspot_links);
+
+						foreach($links as $link) {
+							<div class="modal_wrapper">
+								<div class="modal_title">
+									echo $link['hotspot_title'];
+								</div>
+								<div class="modal_text">
+									echo $link['hotspot_text'];
+								</div>
+								<div class="modal_coordinates">
+									echo "Hotspot_X: " . $link['hotspot_x'] . "<br>";
+									echo "Hotspot_Y: " . $link['hotspot_y'];
+								</div>
+							</div>
+						}
+
+
+					?>
+					</div>
+					
+					
+					
 				</div>
 
 				<?php
