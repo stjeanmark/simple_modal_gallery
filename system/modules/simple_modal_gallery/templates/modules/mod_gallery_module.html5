@@ -29,6 +29,7 @@
 			$this->import('Database');
 			$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
 			$thumbCounter = 1;
+			$triggerCounter = 1;
 			while($result->next())
 			{
 				$objFile = \FilesModel::findByUuid($result->slide_image);
@@ -47,7 +48,6 @@
 
 						<div class="modals_container">
 							<?php
-							$triggerCounter = 0;
 							foreach($links as $link)
 							{
 							?>
