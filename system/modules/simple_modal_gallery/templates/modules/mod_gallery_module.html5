@@ -16,13 +16,13 @@
 				</div>
 				
 				<div class="modals">
-					<?php 
-						$links = unserialize($result->hotspot_links);
-						foreach ($links as &$link) {
-						    echo $link;
-					} 
+				<?php
+					$links = unserialize($result->hotspot_links);
+					echo print_r($links);
+					echo "BREAKLINE";
+					echo var_dump($links);
+				?>
 				</div>
-
 
 				<?php
 				$slideCounter++;
