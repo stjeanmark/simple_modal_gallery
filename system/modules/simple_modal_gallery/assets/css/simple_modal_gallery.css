@@ -101,3 +101,16 @@ img {
 .demo:hover {
   opacity: 1;
 }
+
+
+
+/* Modals */
+
+.modals_container {
+    position: absolute;
+    top: 0;
+}
+.modal_wrapper {
+    background-color: #bdbdbd;
+    padding: 10px;
+}
