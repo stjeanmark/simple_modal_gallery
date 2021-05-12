@@ -28,6 +28,12 @@ function showSlides(n) {
 }
 
 function triggerModal(id) {
+  
+  var textBoxes = document.querySelectorAll('[id^=modal_wrapper]');
+  for(var i in textBoxes){
+     textBoxes[i].style.display = "none";
+  }
+  
   var modal = document.getElementById("id_"+id);
   modal.style.display = "block";
   return;
