@@ -15,13 +15,12 @@
 					<img class="demo cursor" src="<?= $strPath; ?>" style="width:100%" onclick="currentSlide(<?= $slideCounter ?>)" alt="<?php echo $result->slide_name; ?>">
 				</div>
 				
-				<div class="modals"
+				<div class="modals">
 					<?php 
 						$links = unserialize($result->hotspot_links);
 						foreach ($links as &$link) {
 						    echo $link;
-						} 
-					/>
+					} 
 				</div>
 
 
