@@ -29,8 +29,8 @@
 			$this->import('Database');
 			$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
 			$thumbCounter = 1;
-			$triggerCounter = 0;
-			$triggerLinkCounter = 0;
+			$triggerCounter = 1;
+			$triggerLinkCounter = 1;
 			while($result->next())
 			{
 				$objFile = \FilesModel::findByUuid($result->slide_image);
