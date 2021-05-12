@@ -47,9 +47,13 @@
 
 						<div class="modals_container">
 							<?php
+							$triggerCounter = 0;
 							foreach($links as $link)
 							{
 							?>
+								<a class="modal_trigger" href="id_<?php echo $triggerCounter; ?>">
+									<?php echo link['hotspot_title']; ?>
+								</a>
 								<div class="modal_wrapper">
 									<div class="modal_title">
 										<?php echo $link['hotspot_title']; ?>
@@ -59,6 +63,7 @@
 									</div>
 								</div>
 							<?php
+								$triggerCounter++;
 							}
 							?>
 						</div>
