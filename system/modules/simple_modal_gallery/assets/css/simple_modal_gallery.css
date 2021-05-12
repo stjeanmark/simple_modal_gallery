@@ -119,4 +119,5 @@ img {
 .modal_trigger {
 	color: #00c017;
 	font-weight: 700;
+	position: absolute;
 }
