@@ -114,6 +114,7 @@ img {
 	background-color: #bdbdbd;
 	padding: 10px;
 	margin: 5px;
+	display: none;
 }
 .modal_trigger {
 	color: #00c017;
