@@ -49,14 +49,16 @@
 							<?php
 							foreach($links as $link)
 							{
+							?>
 								<div class="modal_wrapper">
 									<div class="modal_title">
-										echo $link['hotspot_title'];
+										<?php echo $link['hotspot_title']; ?>
 									</div>
 									<div class="modal_text">
-										echo $link['hotspot_text'];
+										<?php echo $link['hotspot_text']; ?>
 									</div>
 								</div>
+							<?php
 							}
 							?>
 						</div>
