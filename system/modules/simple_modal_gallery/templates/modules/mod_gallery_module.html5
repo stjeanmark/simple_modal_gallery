@@ -51,9 +51,7 @@
 							foreach($links as $link)
 							{
 							?>
-								<a class="modal_trigger" href="javascript:;" onclick="triggerModal('<?= $triggerCounter; ?>')">
-									<?php echo $link['hotspot_title']; ?>
-								</a>
+								<a class="modal_trigger" href="javascript:;" onclick="triggerModal('<?= $triggerCounter; ?>')"><i class="far fa-dot-circle"></i></a>
 								<div class="modal_wrapper" id="id_<?php echo $triggerCounter; ?>">
 									<div class="modal_title">
 										<?php echo $link['hotspot_title']; ?>
