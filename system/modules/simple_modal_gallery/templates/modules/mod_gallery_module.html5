@@ -38,7 +38,7 @@
 				
 				<div class="mySlides">
 					<div class="numbertext"><?= $thumbCounter ?> / 6</div>
-					<img src="<?= $strPath; ?>" style="width:100%">
+					<img src="<?= $strPath; ?>" style="width:100%" id="id_<?= $thumbCounter ?>">
 					
 					
 					<div class="modals">
@@ -50,7 +50,16 @@
 							<?php
 							foreach($links as $link)
 							{
+								var myImg = document.querySelector("#id_" + $thumbCounter);
+								var realWidth = myImg.naturalWidth;
+								var realHeight = myImg.naturalHeight;
+								
+								var percentWidth = ($link['hotspot_x'] / realWidth) * 100;
+								var percentHeight = ($link['hotspot_y'] / realHeight) * 100;
+								
+								console.log("Width: " + percentWidth + ", Height: " + percentHeight);
 							?>
+								
 								<a class="modal_trigger" href="javascript:;" onclick="triggerModal('<?= $triggerCounter; ?>')"><i class="far fa-dot-circle"></i></a>
 								<div class="modal_wrapper" id="id_<?php echo $triggerCounter; ?>">
 									<div class="modal_title">
