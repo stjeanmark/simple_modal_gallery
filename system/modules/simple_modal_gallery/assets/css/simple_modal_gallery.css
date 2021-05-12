@@ -107,10 +107,15 @@ img {
 /* Modals */
 
 .modals_container {
-    position: absolute;
-    top: 0;
+	position: absolute;
+	top: 0;
 }
 .modal_wrapper {
-    background-color: #bdbdbd;
-    padding: 10px;
+	background-color: #bdbdbd;
+	padding: 10px;
+	margin: 5px;
+}
+.modal_trigger {
+	color: #00c017;
+	font-weight: 700;
 }
