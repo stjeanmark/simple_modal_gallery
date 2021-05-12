@@ -18,9 +18,13 @@
 				<div class="modals">
 				<?php
 					$links = unserialize($result->hotspot_links);
-					echo print_r($links);
-					echo "BREAKLINE";
-					echo var_dump($links);
+					
+					foreach($links as $link) {
+						echo "Title: " . $link['hotspot_title'] . "<br>";
+						echo "Text: " . $link['hotspot_text'] . "<br><br>";
+					}
+					
+					
 				?>
 				</div>
 
