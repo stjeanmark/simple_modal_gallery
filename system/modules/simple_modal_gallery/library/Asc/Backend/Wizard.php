@@ -24,7 +24,7 @@ class Wizard
         }
 
         return sprintf(
-            ' <a href="%s" title="%s" style="padding-left:3px" onclick="Backend.openModalIframe({\'width\':768,\'title\':\'%s\',\'url\':this.href});return false">%s</a>',
+            ' <a href="%s" title="%s" style="padding-left:3px" onclick="Backend.openModalIframe({\'width\':768,\'title\':\'%s\FFDSFDSFDS',\'url\':this.href});return false">%s</a>',
             sprintf(
                 'contao/main.php?do=iso_setup&amp;mod=producttypes&amp;table=tl_iso_producttype&amp;act=edit&amp;id=%s&amp;popup=1&amp;nb=1&amp;rt=%s',
                 $dc->value,
