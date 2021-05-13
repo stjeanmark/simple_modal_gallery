@@ -158,7 +158,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 			'helpwizard' => true
 		],
 		'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true],
-		'wizard'		 => [['Asc\Backend\Wizard', 'onProductTypeWizard']]
+		'wizard'		 => [['Asc\Backend\HotspotHelper', 'onSelectHotspotImage']]
 	),
 	'hotspot_links' => array
 		(
