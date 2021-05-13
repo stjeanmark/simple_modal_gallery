@@ -41,13 +41,11 @@
 					<div class="numbertext"><?= $thumbCounter ?> / 6</div>
 					<img src="<?= $strPath; ?>" style="width:100%" id="id_<?= $thumbCounter ?>">
 					
-					
-					<div class="modals">
 					<?php
 						$links = unserialize($result->hotspot_links);
 					?>
 
-						<div class="modals_container">
+						<div class="links_container">
 							<?php
 							foreach($links as $link)
 							{
@@ -60,24 +58,8 @@
 							<?php
 								$triggerLinkCounter++;
 							}
-							
-							foreach($links as $link)
-							{
-							?>
-								<div class="modal_wrapper" id="ASDF_modal_<?php echo $triggerCounter; ?>">
-									<div class="modal_title">
-										<?php echo $link['hotspot_title']; ?>
-									</div>
-									<div class="modal_text">
-										<?php echo $link['hotspot_text']; ?>
-									</div>
-								</div>
-							<?php
-								$triggerCounter++;
-							}
 							?>
 						</div>
-					</div>
 				</div>
 
 				<?php
