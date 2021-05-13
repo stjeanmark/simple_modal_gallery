@@ -13,9 +13,9 @@
 /* Register the classes */
 ClassLoader::addClasses(array
 (
-	'Asc\Module\GalleryModule' 			=> 'system/modules/simple_modal_gallery/library/Asc/Module/GalleryModule.php',
-	'Asc\Model\SimpleModalGallery' 			=> 'system/modules/simple_modal_gallery/library/Asc/Model/SimpleModalGallery.php',
-	'Asc\Backend\Wizard' 				=> 'system/modules/simple_modal_gallery/library/Asc/Backend/Wizard.php'
+	'Asc\Module\GalleryModule' 				=> 'system/modules/simple_modal_gallery/library/Asc/Module/GalleryModule.php',
+	'Asc\Model\SimpleModalGallery' 				=> 'system/modules/simple_modal_gallery/library/Asc/Model/SimpleModalGallery.php',
+	'Asc\Backend\HotspotHelper' 				=> 'system/modules/simple_modal_gallery/library/Asc/Backend/HotspotHelper.php'
 ));
 
 /* Register the templates */
