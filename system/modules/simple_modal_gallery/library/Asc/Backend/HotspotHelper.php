@@ -18,6 +18,8 @@ class HotspotHelper
 {
     public function onSelectHotspotImage(DataContainer $dc)
     {
+        echo "Hotspot X: ";
+        echo "Hotspot Y: ";
         return '<a href="#">something</a>';
     }
 }
