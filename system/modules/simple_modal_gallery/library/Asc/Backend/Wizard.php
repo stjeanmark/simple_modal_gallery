@@ -1,12 +1,12 @@
 <?php
-
-/*
- * Isotope eCommerce for Contao Open Source CMS
+/**
+ * Simple Modal Gallery - A simple gallery where each image can have multiple hotspots which trigger a modal box.
  *
- * Copyright (C) 2009 - 2019 terminal42 gmbh & Isotope eCommerce Workgroup
+ * Copyright (C) 2021 Mark St. Jean.
  *
- * @link       https://isotopeecommerce.org
- * @license    https://opensource.org/licenses/lgpl-3.0.html
+ * @package    stjeanmark/simple_modal_gallery
+ * @link       http://www.markstjean.com
+ * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
 namespace Asc\Backend;
