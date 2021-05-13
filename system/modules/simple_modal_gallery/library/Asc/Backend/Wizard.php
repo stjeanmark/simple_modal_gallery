@@ -19,10 +19,6 @@ class Wizard
 {
     public function onProductTypeWizard(DataContainer $dc)
     {
-        if ($dc->value < 1) {
-            return ' nothing ';
-        }
-
-        return ' something ';
+        return '<a href="#">something</a>';
     }
 }
