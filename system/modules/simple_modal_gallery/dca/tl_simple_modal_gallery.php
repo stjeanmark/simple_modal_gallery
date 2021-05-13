@@ -131,7 +131,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 		'search'                  => true,
 		'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50'),
 		'sql'                     => "varchar(255) NOT NULL default ''",
-		'wizard'		 => [['Asc\Backend\Wizard', 'onProductTypeWizard']]
+		'wizard'		 => [['Asc\Backend\Wizard', 'onSelectHotspotImage']]
 	),
 	'hotspot_icon' => array
 	(
