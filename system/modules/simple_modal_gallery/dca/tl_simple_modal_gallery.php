@@ -145,7 +145,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 	'slide_image' => array
 	(
 		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_image'],
-		'inputType'               => 'filePicker',
+		'inputType'               => 'picker',
 		'default'		  => '',
 		'search'                  => true,
 		'eval' => [
