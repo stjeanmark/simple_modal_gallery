@@ -56,7 +56,7 @@
 								$percentHeight = ($link['hotspot_y'] / $height) * 100;
 							?>
 								
-								<a style="left: <?= $percentWidth ?>%; top: <?= $percentHeight ?>%;"class="modal_trigger" href="javascript:;" onclick="triggerModal('<?= $triggerLinkCounter; ?>')"><i class="far fa-dot-circle"></i></a>
+								<a style="left: <?= $percentWidth ?>%; top: <?= $percentHeight ?>%;"class="modal_trigger" href="javascript:;" onclick="triggerModal('<?= $triggerLinkCounter; ?>')"><?= $result->hotspot_icon ?></a>
 							<?php
 								$triggerLinkCounter++;
 							}
