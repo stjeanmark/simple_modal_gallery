@@ -15,7 +15,7 @@ ClassLoader::addClasses(array
 (
 	'Asc\Module\GalleryModule' 			=> 'system/modules/simple_modal_gallery/library/Asc/Module/GalleryModule.php',
 	'Asc\Backend\Wizard' 				=> 'system/modules/simple_modal_gallery/library/Asc/Backend/Wizard.php',
-	'Asc\Model\SimpleModalGallery' 			=> 'system/modules/simple_modal_gallery/library/Asc/Model/SimpleModalGallery.php'
+	'Asc\Model\SimpleModalGallery' 			=> 'system/modules/simple_modal_gallery/library/Asc/Model/SimpleModalGallery.php',
 	'CustomTags\SimpleModalGalleryInsertTag' 		=> 'system/modules/simple_modal_gallery/library/CustomTags/SimpleModalGalleryInsertTag.php'
 ));
 
