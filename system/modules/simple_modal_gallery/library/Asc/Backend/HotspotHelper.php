@@ -9,10 +9,12 @@
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
-namespace Asc\Backend\HotspotHelper;
+namespace Asc\Backend;
+
+use Asc\Model\SimpleModalGallery;
+
 use Contao\DataContainer;
 use Contao\Image;
-use Asc\Model\SimpleModalGallery;
 
 class HotspotHelper
 {
