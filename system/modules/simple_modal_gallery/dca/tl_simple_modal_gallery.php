@@ -155,7 +155,8 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 			'extensions' => \Contao\Config::get('validImageTypes'), 
 			'mandatory' => true,
 		],
-		'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true]
+		'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true],
+		'wizard'		 => [['Asc\Backend\Wizard', 'onProductTypeWizard']]
 	),
 	'hotspot_links' => array
 		(
