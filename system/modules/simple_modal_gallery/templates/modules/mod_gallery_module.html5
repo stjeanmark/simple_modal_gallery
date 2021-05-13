@@ -64,7 +64,7 @@
 							foreach($links as $link)
 							{
 							?>
-								<div class="modal_wrapper" id="modal_<?php echo $triggerCounter; ?>">
+								<div class="modal_wrapper" id="ASDF_modal_<?php echo $triggerCounter; ?>">
 									<div class="modal_title">
 										<?php echo $link['hotspot_title']; ?>
 									</div>
@@ -89,4 +89,55 @@
 		<a class="next" onclick="plusSlides(1)">❯</a>
 		
 	</div>
+	
+	
+	<?php
+		$this->import('Database');
+		$result = $this->Database->prepare("SELECT * FROM tl_simple_modal_gallery WHERE published=1")->execute();
+		$thumbCounter = 1;
+		$triggerCounter = 1;
+		$triggerLinkCounter = 1;
+		while($result->next())
+		{
+			$objFile = \FilesModel::findByUuid($result->slide_image);
+			$strPath = $objFile->path;
+			?>
+
+
+				
+
+
+				<div class="modals">
+				<?php
+					$links = unserialize($result->hotspot_links);
+				?>
+
+					<div class="modals_container">
+						<?php
+						foreach($links as $link)
+						{
+						?>
+							<div class="modal_wrapper" id="modal_<?php echo $triggerCounter; ?>">
+								<div class="modal_title">
+									<?php echo $link['hotspot_title']; ?>
+								</div>
+								<div class="modal_text">
+									<?php echo $link['hotspot_text']; ?>
+								</div>
+							</div>
+						<?php
+							$triggerCounter++;
+						}
+						?>
+					</div>
+				</div>
+
+			<?php
+			$thumbCounter++;
+		}
+	?>
+	
+	
+	
+	
 </div>
