@@ -91,7 +91,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
     // Palettes
     'palettes' => array
     (
-        'default'                     => '{slide_legend},slide_name,slide_image;{hotspot_legend},hotspot_links;{publish_legend},published;'
+        'default'                     => '{slide_legend},slide_name,hotspot_icon,slide_image;{hotspot_legend},hotspot_links;{publish_legend},published;'
     ),
  
     // Fields
@@ -126,6 +126,15 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 	'slide_name' => array
 	(
 		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['slide_name'],
+		'inputType'               => 'text',
+		'default'		  => '',
+		'search'                  => true,
+		'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50'),
+		'sql'                     => "varchar(255) NOT NULL default ''"
+	),
+	'hotspot_icon' => array
+	(
+		'label'                   => &$GLOBALS['TL_LANG']['tl_simple_modal_gallery']['hotspot_icon'],
 		'inputType'               => 'text',
 		'default'		  => '',
 		'search'                  => true,
