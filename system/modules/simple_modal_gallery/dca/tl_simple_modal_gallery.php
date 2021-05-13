@@ -130,7 +130,8 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 		'default'		  => '',
 		'search'                  => true,
 		'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50'),
-		'sql'                     => "varchar(255) NOT NULL default ''"
+		'sql'                     => "varchar(255) NOT NULL default ''",
+		'wizard'		 => [['Asc\Backend\HotspotHelper', 'onSelectHotspotImage']]
 	),
 	'hotspot_icon' => array
 	(
@@ -156,8 +157,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 			'mandatory' => true,
 			'helpwizard' => true
 		],
-		'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true],
-		'wizard'		 => [['Asc\Backend\HotspotHelper', 'onSelectHotspotImage']]
+		'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true]
 	),
 	'hotspot_links' => array
 		(
