@@ -11,7 +11,7 @@
 
 namespace Asc\Backend;
 
-use Asc\Model\SimpleModalGallery;
+use Asc\Model\HotspotHelper;
 
 use Contao\DataContainer;
 use Contao\Image;
