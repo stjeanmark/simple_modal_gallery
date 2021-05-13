@@ -138,7 +138,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 		'inputType'               => 'text',
 		'default'		  => '',
 		'search'                  => true,
-		'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50'),
+		'eval'                    => array('mandatory'=>true, 'useRawRequestData'=>true, 'tl_class'=>'w50'),
 		'sql'                     => "varchar(255) NOT NULL default ''"
 	),
 	'slide_image' => array
