@@ -153,9 +153,7 @@ $GLOBALS['TL_DCA']['tl_simple_modal_gallery'] = array
 			'mandatory' => true, 
 			'fieldType' => 'radio', 
 			'filesOnly' => true, 
-			'extensions' => \Contao\Config::get('validImageTypes'), 
-			'mandatory' => true,
-			'helpwizard' => true
+			'mandatory' => true
 		],
 		'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true],
 		'wizard'		 => [['Asc\Backend\HotspotHelper', 'onSelectHotspotImage']]
