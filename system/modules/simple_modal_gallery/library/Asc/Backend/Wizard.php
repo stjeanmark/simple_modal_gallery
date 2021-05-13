@@ -22,12 +22,7 @@ class Wizard
         if ($dc->value < 1) {
             return '';
         }
-        else
-        {
-            return 'asdf';
-        }
 
-      /*
         return sprintf(
             ' <a href="%s" title="%s" style="padding-left:3px" onclick="Backend.openModalIframe({\'width\':768,\'title\':\'%s\',\'url\':this.href});return false">%s</a>',
             sprintf(
@@ -39,6 +34,6 @@ class Wizard
             specialchars(str_replace("'", "\\'", sprintf($GLOBALS['TL_LANG']['tl_iso_producttype']['edit'][1], $dc->value))),
             Image::getHtml('alias.gif', $GLOBALS['TL_LANG']['tl_iso_producttype']['edit'][0])
         );
-        */
+
     }
 }
