@@ -23,9 +23,6 @@ class Wizard
             return ' nothing ';
         }
 
-        return sprintf(
-            ' something ';
-        );
-
+        return ' something ';
     }
 }
