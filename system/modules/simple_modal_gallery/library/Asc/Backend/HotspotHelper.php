@@ -13,9 +13,9 @@ use Contao\DataContainer;
 use Contao\Image;
 use Asc\Model\SimpleModalGallery;
 
-class Wizard
+class HotspotHelper
 {
-    public function onProductTypeWizard(DataContainer $dc)
+    public function onSelectHotspotImage(DataContainer $dc)
     {
         return '<a href="#">something</a>';
     }
