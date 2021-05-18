@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     //document.getElementById("ctrl_hotspot_links").innerHTML += 
              // "<h3 id='update_helper'>Helper Image Goes Here</h3>";
+
+
 });
-
-
 
 var intervalId = window.setInterval(function(){
     
@@ -22,6 +22,11 @@ var intervalId = window.setInterval(function(){
         //stop running once we have found our image
         clearInterval(intervalId) 
     }
+    
+    // grab the wizard table and loop through each child
+        // push in the image selector with the onclick funtion to fill im the boxes
+    
+    
     
 }, 1000);
 
