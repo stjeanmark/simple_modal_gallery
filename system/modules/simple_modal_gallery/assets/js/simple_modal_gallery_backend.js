@@ -17,7 +17,7 @@ var intervalId = window.setInterval(function(){
         
         
         toAppend.insertAdjacentHTML("afterend",
-                "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'><br><div>Hotspot X: #, Hotspot Y: #</div>");
+                "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'>");
         
         //stop running once we have found our image
         clearInterval(intervalId) 
