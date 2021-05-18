@@ -14,5 +14,8 @@ var intervalId = window.setInterval(function(){
         console.log("image Source: " + src);
     }
     
+    console.log("Anyway: " + src);
+    
+    
 }, 5000);
 
