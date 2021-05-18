@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    alert('Page is loaded');
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
