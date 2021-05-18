@@ -11,7 +11,7 @@ var intervalId = window.setInterval(function(){
     var src = picture[0].children[0].src;
     
     if(src != '') {
-        console.log(src);
+        console.log("image Source: " + src);
     }
     
 }, 5000);
