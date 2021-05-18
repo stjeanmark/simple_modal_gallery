@@ -15,18 +15,17 @@ var intervalId = window.setInterval(function(){
     if(src != '') {
         console.log("image Source: " + src);
         
+         var theTable = document.getElementsByClassName("tl_modulewizard");
+    
+        for (var i = 0, row; row = theTable.rows[i]; i++) {
+            row.insertAdjacentHTML("afterend", "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'>");
+        }
         
-        toAppend.insertAdjacentHTML("afterend",
-                "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'>");
+        
+       // toAppend.insertAdjacentHTML("afterend", "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'>");
         
         //stop running once we have found our image
         clearInterval(intervalId) 
     }
-    
-    // grab the wizard table and loop through each child
-        // push in the image selector with the onclick funtion to fill im the boxes
-    
-    
-    
 }, 1000);
 
