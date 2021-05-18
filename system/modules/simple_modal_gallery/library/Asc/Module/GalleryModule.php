@@ -77,7 +77,7 @@ class GalleryModule extends \Contao\Module
 		}
 	    
 	    //adding JS to the backend, hopefully
-	    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/simple_modal_gallery/assets/js/simple_modal_gallery_backend.js';
+	    $GLOBALS['TL_JAVASCRIPT']['mcw'] = 'system/modules/simple_modal_gallery/assets/js/simple_modal_gallery_backend.js';
 	    
 	    
 	    
