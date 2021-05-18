@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("ctrl_hotspot_links").innerHTML += 
-              "<h3>Helper Image Goes Here</h3>";
+              "<h3 id='update_helper'>Helper Image Goes Here</h3>";
 });
 
-// jquery test
-jQuery(document).ready(function($) {
-	alert("js is working");
-});
+
+
+
+
+const input = document.getElementById('ctrl_slide_image');
+const log = document.getElementById('update_helper');
+
+input.addEventListener('change', updateValue);
+
+function updateValue(e) {
+  log.textContent = 'ding';
+}
