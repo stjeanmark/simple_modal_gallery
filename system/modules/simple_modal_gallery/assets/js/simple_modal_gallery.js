@@ -39,3 +39,7 @@ function triggerModal(id) {
     modal.style.display = "block";
   return;
 }
+
+window.onload = function() {
+    alert('Page is loaded');
+};
