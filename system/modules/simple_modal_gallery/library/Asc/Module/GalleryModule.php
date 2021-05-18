@@ -76,6 +76,11 @@ class GalleryModule extends \Contao\Module
 			$GLOBALS['TL_BODY'][] = '<script src="system/modules/simple_modal_gallery/assets/js/simple_modal_gallery.js"></script>';
 		}
 	    
+	    //adding JS to the backend, hopefully
+	    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/simple_modal_gallery/assets/js/simple_modal_gallery_backend.js';
+	    
+	    
+	    
 	    /*
 		$objLocation = Location::findBy('published', '1');
 		
