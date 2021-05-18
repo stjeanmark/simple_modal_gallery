@@ -14,7 +14,7 @@ var intervalId = window.setInterval(function(){
     
     if(src != '') {
 
-       toAppend.insertAdjacentHTML("afterend", "<img id='hotspot_image' style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'><br><p>X:<span id='x'></span></p><p>Y:<span id='y'></span></p>");
+       toAppend.insertAdjacentHTML("afterend", "<img id='hotspot_image' src='" + src + "' width='600px'><br><p>X:<span id='x'></span></p><p>Y:<span id='y'></span></p>");
         
         var myImg = document.getElementById("hotspot_image");
         myImg.onmousedown = GetCoordinates;
