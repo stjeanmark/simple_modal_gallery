@@ -53,6 +53,12 @@ class GalleryModule extends \Contao\Module
             $objTemplate->id = $this->id;
             $objTemplate->link = $this->name;
             $objTemplate->href = 'contao/main.php?do=themes&table=tl_module&act=edit&id=' . $this->id;
+		
+	
+		
+		// add js to backend
+		$GLOBALS['TL_JAVASCRIPT'] = 'system/modules/simple_modal_gallery/assets/js/simple_modal_gallery_backend.js';
+		
  
             return $objTemplate->parse();
         }
@@ -75,10 +81,6 @@ class GalleryModule extends \Contao\Module
 	     if (!in_array('<script src="system/modules/simple_modal_gallery/assets/js/simple_modal_gallery.js"></script>', $GLOBALS['TL_BODY'])) { 
 			$GLOBALS['TL_BODY'][] = '<script src="system/modules/simple_modal_gallery/assets/js/simple_modal_gallery.js"></script>';
 		}
-	    
-	    $GLOBALS['TL_JAVASCRIPT']['mcw'] = $GLOBALS['TL_CONFIG']['debugMode'] 
-             ? 'system/modules/simple_modal_gallery/assets/js/simple_modal_gallery_backend.js' 
-             : 'system/modules/simple_modal_gallery/assets/js/simple_modal_gallery_backend.js'; 
 	    
 	    /*
 		$objLocation = Location::findBy('published', '1');
