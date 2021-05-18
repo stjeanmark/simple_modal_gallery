@@ -5,15 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+var intervalId = window.setInterval(function(){
+    
+    var picture = document.getElementsByClassName("gimage");
+    var src = picture[0].children[0].src;
+    
+    if(src != '') {
+        console.log(src);
+    }
+    
+}, 5000);
 
-
-
-var $input = document.getElementById("ctrl_slide_image");
-
-var event = new Event('input');
-$input.addEventListener('input', function () { 
-  console.log('ding');
-});
-
-$input.value = 'something';
-$input.dispatchEvent(input);
