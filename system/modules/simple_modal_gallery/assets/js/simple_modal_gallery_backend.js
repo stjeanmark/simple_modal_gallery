@@ -9,7 +9,8 @@ var intervalId = window.setInterval(function(){
     
     var picture = document.getElementsByClassName("gimage");
     var toAppend = document.getElementById("pal_slide_legend");
-    var src = picture[0].src;
+    var title = picture[0].title;
+    var src = title.substr(0,title.indexOf(' ')); 
     
     if(src != '') {
         console.log("image Source: " + src);
