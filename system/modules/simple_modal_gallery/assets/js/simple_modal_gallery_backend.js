@@ -48,6 +48,7 @@ function GetCoordinates(e)
   var PosX = 0;
   var PosY = 0;
   var ImgPos;
+  var myImg = document.getElementById("hotspot_image");
   ImgPos = FindPosition(myImg);
   if (!e) var e = window.event;
   if (e.pageX || e.pageY)
