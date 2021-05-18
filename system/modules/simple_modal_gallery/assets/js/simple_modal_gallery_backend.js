@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 var intervalId = window.setInterval(function(){
     
     var picture = document.getElementsByClassName("gimage");
-    var src = picture[0].children[0].src;
+    var src = picture[0].src;
     
     if(src != '') {
         console.log("image Source: " + src);
