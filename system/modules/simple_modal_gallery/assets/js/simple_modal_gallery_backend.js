@@ -22,5 +22,5 @@ var intervalId = window.setInterval(function(){
         clearInterval(intervalId) 
     }
     
-}, 2000);
+}, 1000);
 
