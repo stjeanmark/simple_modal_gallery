@@ -14,7 +14,9 @@ var intervalId = window.setInterval(function(){
     if(src != '') {
         console.log("image Source: " + src);
         
-        toAppend.append("<img src='" + src + "' width='100%'>");
+        
+        toAppend.insertAdjacentHTML("afterend",
+                "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'>");
         
         //stop running once we have found our image
         clearInterval(intervalId) 
