@@ -65,6 +65,11 @@ function GetCoordinates(e)
     }
   PosX = PosX - ImgPos[0];
   PosY = PosY - ImgPos[1];
-  document.getElementById("x").innerHTML = PosX;
-  document.getElementById("y").innerHTML = PosY;
+    
+    $percentWidth = ($link['hotspot_x'] / $width) * 100;
+	$percentHeight = ($link['hotspot_y'] / $height) * 100;
+    
+    
+  document.getElementById("x").innerHTML = (PosX / myImg.width) * 100;
+  document.getElementById("y").innerHTML = (PosY / myImg.height) * 100;;
 }
