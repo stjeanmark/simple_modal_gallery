@@ -23,9 +23,3 @@ $GLOBALS['FE_MOD']['simple_modal_gallery']['gallery_module'] 	= 'Asc\Module\Gall
 
 /* Models */
 $GLOBALS['TL_MODELS']['tl_simple_modal_gallery'] = 'Asc\Model\SimpleModalGallery';
-
-
-/* Hooks */
-if (\Config::getInstance()->isComplete()) {
-	$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('CustomTags\SimpleModalGalleryInsertTag', 'onReplaceTag');
-}
