@@ -13,16 +13,8 @@ var intervalId = window.setInterval(function(){
     var src = title.substr(0,title.indexOf(' ')); 
     
     if(src != '') {
-        console.log("image Source: " + src);
-        
-         var theTable = document.getElementsByClassName("tl_modulewizard");
-    
-        for (var i = 0, row; row = theTable.rows[i]; i++) {
-            row.insertAdjacentHTML("afterend", "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'>");
-        }
-        
-        
-       // toAppend.insertAdjacentHTML("afterend", "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'>");
+
+       toAppend.insertAdjacentHTML("afterend", "<img style='margin-top:5px; padding:10px;' src='" + src + "' width='100%'>");
         
         //stop running once we have found our image
         clearInterval(intervalId) 
