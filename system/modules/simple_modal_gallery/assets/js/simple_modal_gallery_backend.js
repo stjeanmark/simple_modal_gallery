@@ -7,11 +7,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-const input = document.getElementById('ctrl_slide_image');
-const log = document.getElementById('update_helper');
 
-input.addEventListener('change', updateValue);
-
-function updateValue(e) {
-  log.textContent = 'ding';
+var $input = document.getElementById("ctrl_slide_image");
+var last$inputValue = $input.value;
+setInterval(function() {
+    var newValue = $input.value;
+    if (last$inputValue != newValue) {
+        last$inputValue = newValue;
+        handleValueChange();
+    }
+}, 50); // 20 times/second
+function handleValueChange() {
+    console.log("$input's value changed: " + $input.value);
 }
+// Trigger a change
+setTimeout(function() {
+    $input.value = "new value";
+}, 800);
