@@ -26,5 +26,6 @@ $GLOBALS['TL_MODELS']['tl_simple_modal_gallery'] = 'Asc\Model\SimpleModalGallery
 
 if (TL_MODE == 'BE')
 {
-	asdf
+	// add js to backend
+	$GLOBALS['TL_JAVASCRIPT']['smg'] = 'system/modules/simple_modal_gallery/assets/js/simple_modal_gallery_backend.js';
 }
