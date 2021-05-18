@@ -53,12 +53,6 @@ class GalleryModule extends \Contao\Module
             $objTemplate->id = $this->id;
             $objTemplate->link = $this->name;
             $objTemplate->href = 'contao/main.php?do=themes&table=tl_module&act=edit&id=' . $this->id;
-		
-	
-		
-		// add js to backend
-		$GLOBALS['TL_JAVASCRIPT'] = 'system/modules/simple_modal_gallery/assets/js/simple_modal_gallery_backend.js';
-		
  
             return $objTemplate->parse();
         }
